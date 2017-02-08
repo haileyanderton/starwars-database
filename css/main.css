@@ -1,0 +1,171 @@
+* {
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  }
+
+body {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+  text-align: center;
+  color: #EDEC51;
+  font-family: 'Russo One', sans-serif;
+  font-size: 55px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  padding: 3%;
+}
+
+a:link {color: #BF5960;}
+a:visited {color: #94609D;}
+a:hover {color: #C47B92;}
+
+#container {
+ width: 100%;
+ display: block;
+}
+
+
+.middle {
+  text-align: center;
+}
+
+#content {
+  background-color: #303030;
+  padding: 5%;
+}
+label {
+    display: block;
+    padding-top: 0.7em;
+}
+select {
+   background: #fff;
+   border: 1px solid #ccc;
+   font-size: 1em;
+   height: 2em;
+   padding: 0.1em;
+   /* too much padding and the options won't show in IE */
+   width: 100%;
+}
+input {
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5em;
+    padding: 5px;
+}
+.middle {
+	text-align: center;
+}
+.announce {
+	background: #303030;
+	padding: 20px 0;
+	text-align: center;
+	width: 90%;
+	margin: 2em auto;
+	border: 1px solid #cc90c0;
+}
+
+
+/* special classes */
+
+.smallform p {
+	text-align: center;
+}
+.smallform input[type='radio'] {
+	display: inline;
+	width: auto;
+}
+.smallform label {
+	display: inline;
+}
+
+/* submit button styling insanity
+   http://cssdemos.tupence.co.uk/button-styling.htm
+   */
+
+input[type='submit'] {
+	cursor: pointer;
+	width: auto;
+	padding: 5px 25px;
+	background: #9D4E60;
+	border: 1px solid #9D4E60;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	box-shadow: 0 0 4px rgba(0,0,0, .75);
+	color: #fff;
+	font-family: Calibri, sans-serif;
+	font-size: 1.2em;
+	margin-top: 1em;
+}
+input[type='submit']:hover,
+input[type='submit']:focus {
+	background: #C98588;
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+	box-shadow: 0 0 1px rgba(0,0,0, .75);
+	outline: none;
+}
+.smallform input[type='submit'] {
+	display: block;
+	margin: auto;
+}
+/* css table styling copied and tweaked from http://webtricksandtreats.com/table-style-css/ */
+table {
+      font-family: 'Source Code Pro', monospace;
+       font-size: 11px;
+       color: #fff;
+       border-width: 1px;
+       border-color: #303030;
+       border-collapse: collapse;
+   }
+th {
+       border-width: 1px;
+       padding: 8px;
+       border-style: solid;
+       border-color: #9D4E60;
+       background-color: #000;
+       color: #fff;
+   }
+  tr:hover td {
+       cursor: pointer;
+   }
+  tr:nth-child(even) td{
+       background-color: #303030;
+   }
+   td {
+       border-width: 1px;
+       padding: 8px;
+       border-style: solid;
+       border-color: #9D4E60;
+       background-color: #000;
+   }
+
+
+/* media queries */
+
+@media screen and ( max-width: 700px ) {
+  #container {
+		margin: 10px auto;
+		padding: 10px;
+    font-size: .5em;
+	}
+	#content { width: 100%; }
+  h1 {
+    font-size: 35px;
+  }
+}
